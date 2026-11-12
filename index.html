@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mesa de ayuda ACME</title>
+  <meta name="description" content="Prototipo académico de una mesa de ayuda informática. Datos ficticios.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Public+Sans:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <div class="brand">
+        <a class="brand__name" href="#/" translate="no">Mesa de ayuda ACME</a>
+        <span class="brand__note">Prototipo académico · Datos ficticios</span>
+      </div>
+
+      <div class="role-switch" role="group" aria-labelledby="role-switch-label">
+        <span id="role-switch-label" class="role-switch__label">Ver como</span>
+        <button type="button" class="role-switch__option" data-rol="trabajador" aria-pressed="false">Trabajador</button>
+        <button type="button" class="role-switch__option" data-rol="soporte" aria-pressed="false">Soporte TI</button>
+      </div>
+    </div>
+
+    <nav class="site-nav" aria-label="Principal">
+      <ul class="site-nav__list" id="nav-list"></ul>
+    </nav>
+  </header>
+
+  <div id="storage-banner" class="storage-banner" role="alert" hidden></div>
+
+  <main id="contenido" class="page" tabindex="-1">
+    <noscript>
+      <p class="notice notice--error">Este prototipo necesita JavaScript activado para funcionar.</p>
+    </noscript>
+  </main>
+
+  <div id="anuncio" class="visually-hidden" role="status" aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>
+        Prototipo académico de estudiantes de Ingeniería Informática. No es una herramienta oficial
+        de ACME Chile y todos los nombres y casos son ficticios.
+      </p>
+      <p>
+        Los datos se guardan solo en este navegador. Esta versión no sincroniza usuarios ni equipos.
+      </p>
+      <button type="button" class="button button--quiet" id="btn-restablecer">Restablecer datos de ejemplo</button>
+    </div>
+  </footer>
+
+  <dialog id="dialogo-restablecer" class="dialog" aria-labelledby="dialogo-titulo" aria-describedby="dialogo-texto">
+    <form method="dialog" class="dialog__body">
+      <h2 id="dialogo-titulo" class="dialog__title">¿Restablecer los datos de ejemplo?</h2>
+      <p id="dialogo-texto">
+        Se borrarán los casos que registraste y todos los cambios hechos en este navegador.
+        Luego se cargarán de nuevo los casos de ejemplo. Esta acción no se puede deshacer.
+      </p>
+      <div class="dialog__actions">
+        <button type="submit" value="cancelar" class="button button--secondary" autofocus>Cancelar</button>
+        <button type="submit" value="confirmar" class="button button--danger">Borrar y restablecer</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="js/store.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+Ejecución: 2026-11-12T02:22:24
+Navegador: Chromium (Playwright, sin interfaz)
+
+[OK   ] Inicio: título "Mesa de ayuda ACME"
+[OK   ] Inicio: aviso "Prototipo académico · Datos ficticios"
+[OK   ] Inicio: se cargan 4 casos de ejemplo
+[OK   ] Rol trabajador: abre "Reportar un problema"
+[OK   ] Validación: formulario vacío muestra 4 errores
+[OK   ] Validación: el foco va al primer campo con error
+[OK   ] Validación: campos marcados con aria-invalid
+[OK   ] Validación: conserva lo escrito tras el error
+[OK   ] Validación: descripción corta pide mínimo de caracteres
+[OK   ] Borrador: se conserva al recargar la pestaña
+[OK   ] Registro válido: muestra número ACME-005
+[OK   ] Doble envío: se registró un solo caso
+[OK   ] Confirmación → seguimiento del mismo caso
+[OK   ] Seguimiento: estado inicial Recibido
+[OK   ] Seguimiento: muestra descripción
+[OK   ] Seguimiento: responsable "Sin asignar"
+[OK   ] Búsqueda: "acme-2" encuentra ACME-002
+[OK   ] Búsqueda: historial con fechas
+[OK   ] Búsqueda: caso inexistente muestra mensaje claro
+[OK   ] Búsqueda: formato inválido explica el formato
+[OK   ] Búsqueda: campo vacío pide un número
+[OK   ] Cambio de rol conserva el caso (trabajador → soporte)
+[OK   ] Regla: no inicia atención sin responsable
+[OK   ] Asignación: confirma "Responsable asignado: Ana Soto"
+[OK   ] Asignación: queda en el historial
+[OK   ] Estado: pasa a En atención
+[OK   ] Comentario vacío: muestra error
+[OK   ] Comentario: queda en el historial
+[OK   ] Regla: no marca Resuelto sin solución
+[OK   ] Estado: pasa a Resuelto con solución
+[OK   ] Cambio de rol conserva el caso (soporte → trabajador)
+[OK   ] Trabajador ve la solución aplicada
+[OK   ] Reapertura sin motivo: muestra error
+[OK   ] Reapertura: vuelve a En atención
+[OK   ] Reapertura: queda en el historial
+[OK   ] Soporte ve la reapertura y el responsable se mantiene
+[OK   ] Cierre: el trabajador confirma y queda Cerrado
+[OK   ] Soporte ve el caso Cerrado y sin formularios
+[OK   ] Panel: lista 5 casos
+[OK   ] Filtro Cerrado: solo casos cerrados y estado en la URL
+[OK   ] Filtro Recibido: muestra ACME-004
+[OK   ] Persistencia: tras recargar, ACME-005 sigue Cerrado
+[OK   ] Persistencia: historial completo tras recargar
+[OK   ] Texto seguro: etiquetas se muestran como texto
+[OK   ] Texto seguro: no se ejecuta código
+[OK   ] Restablecer: pide confirmación
+[OK   ] Restablecer: Cancelar no borra datos
+[OK   ] Restablecer: el foco vuelve al botón
+[OK   ] Restablecer: Escape cierra sin borrar
+[OK   ] Restablecer: vuelven los 4 casos de ejemplo
+[OK   ] Restablecer: ACME-005 ya no existe
+[OK   ] Sin errores de JavaScript en el recorrido
+[OK   ] Teclado: el primer Tab llega a "Saltar al contenido"
+[OK   ] Teclado: "Saltar al contenido" no cambia de pantalla
+[OK   ] Teclado: foco visible en el siguiente control
+[OK   ] Teclado: formulario completo con Tab y Enter
+[OK   ] Teclado: filtros se cambian con flechas y mantienen el foco
+[OK   ] Teclado: sin errores de JavaScript
+[OK   ] Móvil 390px: sin desplazamiento horizontal en inicio
+[OK   ] Móvil 390px: sin desplazamiento horizontal en #/reportar
+[OK   ] Móvil 390px: sin desplazamiento horizontal en #/seguimiento/ACME-002
+[OK   ] Móvil 390px: sin desplazamiento horizontal en #/soporte
+[OK   ] Móvil 390px: sin desplazamiento horizontal en #/soporte/ACME-003
+[OK   ] Móvil: controles de al menos 44 px de alto
+[OK   ] Móvil: sin errores de JavaScript
+[OK   ] Móvil 320px: sin desplazamiento horizontal en inicio
+[OK   ] Móvil 320px: sin desplazamiento horizontal en #/reportar
+[OK   ] Móvil 320px: sin desplazamiento horizontal en #/confirmacion/ACME-004
+[OK   ] Móvil 320px: sin desplazamiento horizontal en #/seguimiento/ACME-002
+[OK   ] Móvil 320px: sin desplazamiento horizontal en #/soporte
+[OK   ] Móvil 320px: sin desplazamiento horizontal en #/soporte/ACME-003
+[OK   ] Almacenamiento bloqueado: muestra aviso comprensible
+[OK   ] Almacenamiento bloqueado: la demostración sigue funcionando en memoria
+[OK   ] Datos dañados: avisa y ofrece restablecer
+[OK   ] Datos dañados: restablecer recupera el guardado
+
+75 de 75 comprobaciones correctas.
